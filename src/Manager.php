@@ -2,7 +2,7 @@
 
 namespace MailerLite\LaravelElasticsearch;
 
-use Elasticsearch\Client;
+use Elastic\Elasticsearch\Client;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\Arr;
 
