@@ -24,15 +24,8 @@ class Factory
      */
     protected $configMappings = [
         'sslVerification'    => 'setSSLVerification',
-        'sniffOnStart'       => 'setSniffOnStart',
         'retries'            => 'setRetries',
-        'httpHandler'        => 'setHandler',
-        'connectionPool'     => 'setConnectionPool',
-        'connectionSelector' => 'setSelector',
-        'serializer'         => 'setSerializer',
-        'connectionFactory'  => 'setConnectionFactory',
-        'endpoint'           => 'setEndpoint',
-        'namespaces'         => 'registerNamespace',
+        'nodePool'           => 'setNodePool',
     ];
 
     /**
