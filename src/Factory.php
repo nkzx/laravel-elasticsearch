@@ -2,8 +2,8 @@
 
 namespace MailerLite\LaravelElasticsearch;
 
-use Elastic\Elasticsearch\Client;
-use Elastic\Elasticsearch\ClientBuilder;
+use Elasticsearch\Client;
+use Elasticsearch\ClientBuilder;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 use GuzzleHttp\Ring\Future\CompletedFutureArray;
@@ -24,7 +24,15 @@ class Factory
      */
     protected $configMappings = [
         'sslVerification'    => 'setSSLVerification',
+        'sniffOnStart'       => 'setSniffOnStart',
         'retries'            => 'setRetries',
+        'httpHandler'        => 'setHandler',
+        'connectionPool'     => 'setConnectionPool',
+        'connectionSelector' => 'setSelector',
+        'serializer'         => 'setSerializer',
+        'connectionFactory'  => 'setConnectionFactory',
+        'endpoint'           => 'setEndpoint',
+        'namespaces'         => 'registerNamespace',
     ];
 
     /**
