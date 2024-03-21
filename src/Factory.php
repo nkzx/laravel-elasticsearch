@@ -25,7 +25,6 @@ class Factory
     protected $configMappings = [
         'sslVerification'    => 'setSSLVerification',
         'retries'            => 'setRetries',
-        'nodePool'           => 'setNodePool',
     ];
 
     /**
